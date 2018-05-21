@@ -17,5 +17,6 @@ module.exports = app => {
   app.get('/api/getuser', (req,res)=> {
     res.send(req.user);
   })
-  
+
 };
+//boom

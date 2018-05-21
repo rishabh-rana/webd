@@ -5,5 +5,6 @@ module.exports = {
   mongoURI: "mongodb://rana:rana@ds229380.mlab.com:29380/emaily",
   cookieKey : "befbjewfwkjbfkwebjfbwe",
   stripepublic : "pk_test_qQErcsABSLlCstFT4qWOH5bJ",
-  stripesecret: "sk_test_4gU1VxpngznZt41IjGgShKiL"
+  stripesecret: "sk_test_4gU1VxpngznZt41IjGgShKiL",
+  sendgridkey : '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'
 };

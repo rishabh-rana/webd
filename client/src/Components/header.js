@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
-import Spinner from './spinner';
+
 import Payments from './payments';
 
 class Header extends Component {
@@ -12,9 +12,9 @@ class Header extends Component {
       case (null):
         content = (<ul className="navbar-nav">
           <li className="nav-item">
-            <a className="nav-link disabled" href="#">
+            <span className="nav-link " >
               Loading...
-            </a>
+            </span>
           </li>
         </ul>);
         break;
