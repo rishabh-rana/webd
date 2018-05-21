@@ -8,8 +8,11 @@ const reducer = (state = null, action) => {
         newsurveys = [...state.surveys];
       }
       const newstate2 = action.payload || false;
-      newstate2.surveys = newsurveys;
-      console.log(newstate2);
+      if(newstate2){
+        newstate2.surveys = newsurveys;
+      }
+
+
       return newstate2;
 
     case LOADING_CREDITS:
@@ -20,7 +23,7 @@ const reducer = (state = null, action) => {
     case FETCH_SURVEYS:
       const newstate1 = { ...state };
       newstate1.surveys = action.payload;
-      console.log(newstate1);
+    
       return newstate1;
   }
 
